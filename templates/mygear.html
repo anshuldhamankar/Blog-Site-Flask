@@ -1,0 +1,108 @@
+{% extends "layout.html" %}
+{% block body %}
+
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/gear-bg.jpg')}}')">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="page-heading">
+                        <h1>My Coding Gears</h1>
+                        <span class="subheading">The tools that power my coding journey.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                <!-- PC with Photo -->
+                <div class="col-md-4 mb-4">
+                    <div>
+                        <img src="{{ url_for('static', filename='assets/img/pc.jpg') }}" alt="My Coding PC" style="max-width: 100%;">
+                        <p>💻 My Coding Rig: Asus TUF Dash F-15 </p>
+                        <ul>
+                            <li>Intel Core i5-12450H, 2 GHz (up to 4.4 GHz)</li>
+                            <li>NVIDIA GeForce RTX 3050 GPU, 1550MHz (OC)</li>
+                            <li>8GB DDR5 RAM, 4800MHz</li>
+                            <li>512GB M.2 NVMe PCIe 3.0 SSD</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Microphone with Photo -->
+                <div class="col-md-4 mb-4">
+                    <div>
+                        <img src="{{ url_for('static', filename='assets/img/headphone.jpg') }}" alt="My Microphone" style="max-width: 100%;">
+                        <p>🎧 My Headphone: Mi Basic Earphone with Mic (Black, ZBW4476IN)</p>
+                        <ul>
+                            <li>With Mic: Yes</li>
+                            <li>Connector Type: 3.5 mm</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Mouse with Photo -->
+                <div class="col-md-4 mb-4">
+                    <div>
+                        <img src="{{ url_for('static', filename='assets/img/mouse.jpg') }}" alt="My Mouse" style="max-width: 100%;">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                   
+                        <p>🖱️ My Mouse: Dell MS116 USB Optical Mouse (Black)</p>
+                        <ul>
+                            <li>Just a normal Mouse</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Keyboard with Photo -->
+                <div class="col-md-4 mb-4">
+                    <div>
+                        <img src="{{ url_for('static', filename='assets/img/keyboard.jpg') }}" alt="My Keyboard" style="max-width: 100%;">
+                        <p>⌨️ My Keyboard: Redgear Shadow Blade Mechanical Keyboard</p>
+                        <ul>
+                            <li>Blue Clicky Switches for tactile feedback</li>
+                            <li>22 Spectrum LED Modes for day and night</li>
+                            <li>Windows Key Lock for uninterrupted gaming</li>
+                            <li>Floating Key-Caps with precise and clicky results</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Phone with Photo -->
+                <div class="col-md-4 mb-4">
+                    <div>
+                        <img src="{{ url_for('static', filename='assets/img/phone.jpg') }}" alt="My Phone" style="max-width: 100%;">
+                        <p>📱 My Phone: Realme 9 Pro Plus (Black)</p>
+                        <ul>
+                            <li>Display: Super AMOLED, 90Hz</li>
+                            <li>Storage: 128GB, RAM: 6GB</li>
+                            <li>Processor: Mediatek Dimensity 920 (6 nm)</li>
+                            <li>Camera: 50MP Sony 766 OIS sensor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Add additional devices with photos and details here -->
+
+            </div>
+
+            <!-- Second Row -->
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+
+                <!-- Additional devices with photos and details -->
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <!-- Add your footer content here -->
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{
+  "parameters":
+  {
+    "local_server": "True",
+    "local_uri": "mysql+pymysql://root:@localhost/codingwizard",
+    "prod_uri": "mysql+pymysql://root:@localhost/codingwizard",
+    "insta_url": "https://www.instagram.com/anshuldhamankar/",
+    "lk_url": "https://www.linkedin.com/in/anshul-dhamankar-57146b251/",
+    "gh_url": "https://github.com/anshuldhamankar2004",
+    "blog_name": "Anshul Dhamankar",
+    "gmailuserid": "emai@gmail.com",
+    "gmailpassword": "password",
+    "no_of_posts": 2,
+    "login_image":"login.svg",
+    "admin_username":"USERNAME",
+    "admin_password": "PASSWORD",
+    "upload_location":"C:\\Users\\ASUS\\PycharmProjects\\BLOG\\static\\assets\\img"
+  }
+}

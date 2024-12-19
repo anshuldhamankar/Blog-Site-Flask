@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('          {{ url_for('static', filename='assets/img/about-bg.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>About Me</h1>
+                            <span class="subheading">This is what I do.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <p>👋 Hello there! I'm Anshul Dhamankar, hailing from the vibrant city of Amravati in Maharashtra, India.</p>
+
+                        <p>💻 By day, you'll find me immersed in the world of coding, fueled by a deep passion for unraveling the mysteries of algorithms and data structures. I'm on a journey to become a data scientist, driven by the belief that data holds the key to unlocking valuable insights and shaping a smarter, more informed world.</p>
+                        <p>🏍️ When I'm not deciphering code, you can catch me hitting the open road on my bike. There's something liberating about the wind in my hair and the hum of the engine beneath me—a perfect balance to the intricate world of coding.</p>
+                        <p>📚 Currently working towards my goals, I'm dedicated to the pursuit of knowledge and constantly leveling up my skills. I believe in the power of data to transform ideas into reality and bring about positive change.</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- Footer-->
+
+    {% endblock %}

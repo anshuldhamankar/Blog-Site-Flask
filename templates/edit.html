@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+{% block body %}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/edit-bg.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Add/Edit Posts.</h1>
+                            <span class="subheading"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+            <a class="text-center d-flex align-items-center justify-content-center" href="/dashboard"> <button class="btn btn-primary text-uppercase">Dashboard Home</button></a>
+            <br>
+            <a class="text-center d-flex align-items-center justify-content-center" href="/edit/0"> <button class="btn btn-primary text-uppercase">Log Out</button></a>
+
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                                <form id="contactForm" action="/edit/{{sno}}" method="post" data-sb-form-api-token="API_TOKEN">
+                                <div class="form-floating">
+                                    <input class="form-control" id="title" type="text" name="title" placeholder="Enter New Title..." value="{{post.title}}" />
+                                    <label for="title">Title</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="subtitle" type="text" name='subtitle' placeholder="Enter New Sub Title..."value="{{post.subtitle}}"/>
+                                    <label for="subtitle">Sub-Title</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="slug" type="text" name="slug" placeholder="Enter new Slug..."value="{{post.slug}}">
+                                    <label for="slug">Slug</label>
+                                </div>
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="content" name="content" placeholder="Enter new slug..." style="height: 12rem">{{post.content}}</textarea>
+                                    <label for="content">Content</label>
+
+                                </div>
+                                <div class="form-floating">
+                                    <input class ="form-control" id="img_file" name="img_file" placeholder="Enter your message here..." value="{{post.img_file}}" />
+                                    <label for="img_file">IMG FILE</label>
+                                </div>
+                                <div class="form-floating">
+                                    <input class="form-control" id="link" name="link" placeholder="Enter New Link..." value="{{post.link}}" />
+                                    <label for="link">LINK</label>
+                                </div>
+                                <br />
+                                <!-- Submit success message-->
+                                <!---->
+                                <!-- This is what your users will see when the form-->
+                                <!-- has successfully submitted-->
+                                <div class="d-none" id="submitSuccessMessage">
+                                    <div class="text-center mb-3">
+                                        <div class="fw-bolder">Form submission successful!</div>
+                                        To activate this form, sign up at
+                                        <br />
+                                        <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                    </div>
+                                </div>
+                                <!-- Submit error message-->
+                                <!---->
+                                <!-- This is what your users will see when there is-->
+                                <!-- an error submitting the form-->
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                                <!-- Submit Button-->
+                                <button type="submit" class="btn btn-primary" id="sendMessageButton" type="submit">Submit</button>
+                            </form>
+
+                                  
+
+                                </div>
+                            </div>
+                        </div>
+                    {% endblock %}
